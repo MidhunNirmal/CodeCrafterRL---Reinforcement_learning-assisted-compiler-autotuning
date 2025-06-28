@@ -109,7 +109,12 @@ mypro
 checkpoints
 polybench_data
 polybench_data
+models
+./t.ipynb
+./t1.py
 # reward_curves
 *.json
 *.csv
 lib64
+t1.py
+t2.py

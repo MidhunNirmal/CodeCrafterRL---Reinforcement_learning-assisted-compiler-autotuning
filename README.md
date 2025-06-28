@@ -105,6 +105,127 @@ This will simulate a reward curve and save it under `reward_curves/`.
 
 ---
 
+
+
+Great! Here's a refined and concise **`TESTING.md`** in Markdown, ready for direct use in your project:
+
+```markdown
+# 🧪 Testing Guide for CodeCrafterRL
+
+Run tests in multiple modes depending on your goals:
+
+---
+
+## 🔹 1. Quick Test (Recommended First Step)
+
+```bash
+python quick_test_examples.py
+```
+
+Runs:
+- Agent vs dataset performance
+- Configuration analysis
+- Decision pattern evaluation
+- Benchmark comparisons
+
+---
+
+## 🔹 2. Interactive CLI
+
+```bash
+python interactive_test.py
+```
+
+Explore with a menu-driven interface:
+- Choose benchmarks
+- Test custom configurations
+- Compare with best/worst known settings
+- Run targeted evaluations
+
+---
+
+## 🔹 3. Full Test Suite
+
+```bash
+python run_tests.py
+```
+
+Executes all tests and saves:
+- 📊 Plots to `test_plots/`
+- 📝 JSON reports to `test_results/`
+
+---
+
+## ⚙️ Prerequisites
+
+### Required Files:
+- `data/exec_times.csv`
+- Trained models in `models/`
+
+### Required Scripts:
+- `data_preprocessing.py`
+- `compiler_environment.py`
+- `dqn_agent.py`
+- `trainer.py`
+
+### Dependencies:
+
+```bash
+pip install pandas numpy matplotlib seaborn torch
+```
+
+Optional (PyTorch):
+
+```bash
+# For GPU
+pip install torch torchvision torchaudio
+
+# For CPU only
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```
+
+---
+
+## 🧪 Run Custom Tests
+
+```python
+from test_system import CompilerOptimizationTester
+
+tester = CompilerOptimizationTester("data/exec_times.csv")
+tester.setup()
+results = tester.test_agent_vs_dataset("2mm", n_tests=50)
+print(f"Win rate: {results['summary']['success_rate']:.2%}")
+```
+
+---
+
+## 🛠️ Troubleshooting
+
+- ❗ **No trained models?**
+  - Run: `python trainer.py`
+
+- 📂 **Missing dataset?**
+  - Ensure `data/exec_times.csv` exists or update the path in code
+
+- 🐍 **Import errors?**
+  - Install dependencies with `pip install -r requirements.txt` or manually
+
+---
+
+✅ **Recommended Start:**
+
+```bash
+python quick_test_examples.py
+```
+
+This verifies your setup and shows meaningful test output!
+```
+
+
+
+
+
+
 ## 🤝 Contributing
 
 We welcome contributions of all kinds:

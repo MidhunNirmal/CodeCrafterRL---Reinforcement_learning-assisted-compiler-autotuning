@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 class DataPreprocessor:
     """Handles loading and preprocessing of PolyBench execution data"""
     
-    def __init__(self, data_path: str = "data/exec_times.csv"):
+    def __init__(self, data_path: str = "exec_times.csv"):
         self.data_path = data_path
         self.scaler = StandardScaler()
         self.label_encoders = {}
