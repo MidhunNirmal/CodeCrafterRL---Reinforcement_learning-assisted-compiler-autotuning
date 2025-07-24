@@ -1,264 +1,114 @@
-# CodeCrafterRL: Reinforcement Learning-Assisted Compiler Autotuning
+# Alternate RL Model & LOOCV (Leave-One-Out Cross Validation)
 
-Welcome to **CodeCrafterRL**, an open-source research project designed to explore **Reinforcement Learning (RL)** for **automatic compiler flag tuning** across benchmarks in the [PolyBench suite](https://github.com/stefanocereda/polybench_data). This project leverages Deep Q-Networks (DQN) to learn optimal compiler configurations that minimize execution time for a given benchmark.
+This directory contains advanced reinforcement learning (RL) models for compiler optimization, with a focus on the expanded features DQN agent, which has demonstrated state-of-the-art performance.
 
----
+## Overview
 
-## 🚀 Features
-
-- 🧠 **Reinforcement Learning environment** using OpenAI Gym API
-- ⚙️ RL agent (DQN) trained to select compiler flags
-- 📊 Execution time prediction using Nearest Neighbors and heuristic fallback
-- 📈 Reward curves plotted and saved for performance analysis
-- 🧹 Fully modular: `data_preprocessing.py`, `compiler_environment.py`, `dqn_agent.py`, `trainer.py`, `main.py`
+- **alt_rl_model/**: Implements RL agents (notably DQN) for optimizing compiler flags using benchmark data. Includes environments, data preprocessors, training scripts, and analysis tools.
+- **loocv/**: Implements Leave-One-Out Cross Validation (LOOCV) for the expanded features DQN agent, testing generalization by excluding a benchmark from training and evaluating on it.
 
 ---
 
-## 📁 Project Structure
+## Why Expanded Features DQN?
 
-```
-CodeCrafterRL/
-├── data/                           # Raw input CSVs (exec_times.csv)
-├── checkpoints/                   # Saved model checkpoints
-├── reward_curves/                 # Saved plots per benchmark
-├── data_preprocessing.py          # Dataset loader and cleaner
-├── compiler_environment.py        # Gym environment definition
-├── dqn_agent.py                   # Deep Q-Learning agent
-├── trainer.py                     # Training loop
-├── main.py                        # Entry point to run the pipeline
-├── test_reward_plot.py            # Test plot generator
-└── README.md                      # Project documentation
-```
+**The expanded features DQN agent is the best model.**
 
----
-
-## 📦 Dataset
-
-The dataset used for this project is sourced from:
-
-🔗 [https://github.com/stefanocereda/polybench\_data](https://github.com/stefanocereda/polybench_data)
-
-- Pre-collected execution times of PolyBench benchmarks under various compiler flag settings
-- Save the dataset CSV (`exec_times.csv`) in the `data/` directory
+- **100% Success Rate:** All 24 benchmarks optimized successfully!
+- **Average Improvement:** 21.25% (vs previous ~16%)
+- **Best Performance:** Up to 47.98% improvement on `network_patricia`
+- **Top Performers:**
+  - `network_patricia`: 47.98% improvement
+  - `security_sha`: 42.21% improvement
+  - `office_stringsearch1`: 35.11% improvement
+  - `automotive_susan_s`: 32.62% improvement
+  - `telecom_adpcm_c`: 31.38% improvement
+- **Key:** The 279 additional static features (code characteristics, memory access, basic block info, branch prediction) allow the model to make much more informed optimization decisions.
 
 ---
 
-## ✅ Setup Instructions
+## Directory Structure
 
-### 1. Clone the Repository
+- **alt_rl_model/**
+  - `alt_comp_env.py`, `alt_comp_env_unified.py`: RL environments for standard and unified (multi-benchmark) training
+  - `alt_data_preprocessor.py`, `alt_data_preprocessor_correct.py`: Data preprocessing scripts
+  - `dqn_agent.py`: DQN agent implementation
+  - `train_alt_rl.py`, `train_unified_alt_rl.py`, `train_expanded_features.py`: Training scripts for various models
+  - `test_model.py`: Model evaluation and analysis
+  - `analyze_alt_dataset.py`: Data analysis and visualization
+  - `processed/`: Preprocessed benchmark data
+  - `results/`, `plots/`: Output directories for results and visualizations
+
+- **loocv/**
+  - `loocv_data_preprocessor.py`: Data preprocessor for LOOCV
+  - `loocv_environment.py`: RL environment for LOOCV
+  - `loocv_trainer.py`: Main LOOCV training script
+  - `loocv_tester.py`: LOOCV testing script
+  - Output files: trained models, results, and plots
+
+---
+
+## How to Run
+
+### 1. Train the Expanded Features DQN Agent
 
 ```bash
-git clone https://github.com/MidhunNirmal/CodeCrafterRL---Reinforcement_learning-assisted-compiler-autotuning.git
-cd CodeCrafterRL---Reinforcement_learning-assisted-compiler-autotuning
+cd alt_rl_model
+python train_unified_alt_rl.py
 ```
+- Trains the DQN agent using all benchmarks and expanded features.
+- Model weights saved as `unified_alt_dqn_agent.pth`.
 
-### 2. Create a Virtual Environment (Optional but recommended)
+### 2. Test/Evaluate the Trained Model
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+python test_model.py
 ```
+- Evaluates the trained model on all benchmarks.
+- Prints summary statistics and saves results/plots.
 
-### 3. Install Dependencies
+### 3. Leave-One-Out Cross Validation (LOOCV)
 
+#### a. Train with LOOCV (excluding `security_sha`):
 ```bash
-pip install -r requirements.txt
+cd loocv
+python loocv_trainer.py
 ```
+- Trains the expanded features DQN agent on all benchmarks except `security_sha`.
+- Evaluates on the excluded benchmark.
+- Saves model and results in the `loocv/` directory.
 
-If `requirements.txt` is not available, manually install:
-
+#### b. Additional Testing (Optional):
 ```bash
-pip install numpy pandas matplotlib seaborn torch scikit-learn gym
+python loocv_tester.py
 ```
+- Loads the LOOCV-trained model and runs further evaluation on `security_sha`.
 
 ---
 
-## 🚦 Running the Project
+## Dependencies
 
-### Step 1: Prepare the dataset
+- Python 3.7+
+- PyTorch
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- Gym
 
-- Download or generate the `exec_times.csv` from the PolyBench data repo.
-- Place it inside the `data/` directory.
-
-### Step 2: Start Training
-
+Install dependencies with:
 ```bash
-python main.py
-```
-
-### Outputs:
-
-- Checkpoints: `checkpoints/<benchmark>/`
-- Reward Curves: `reward_curves/<benchmark>_reward_curve.png`
-
----
-
-## 📊 Visualization
-
-To test plotting rewards independently:
-
-```bash
-python test_reward_plot.py
-```
-
-This will simulate a reward curve and save it under `reward_curves/`.
-
----
-
-
-
-Great! Here's a refined and concise **`TESTING.md`** in Markdown, ready for direct use in your project:
-
-```markdown
-# 🧪 Testing Guide for CodeCrafterRL
-
-Run tests in multiple modes depending on your goals:
-
----
-
-## 🔹 1. Quick Test (Recommended First Step)
-
-```bash
-python quick_test_examples.py
-```
-
-Runs:
-- Agent vs dataset performance
-- Configuration analysis
-- Decision pattern evaluation
-- Benchmark comparisons
-
----
-
-## 🔹 2. Interactive CLI
-
-```bash
-python interactive_test.py
-```
-
-Explore with a menu-driven interface:
-- Choose benchmarks
-- Test custom configurations
-- Compare with best/worst known settings
-- Run targeted evaluations
-
----
-
-## 🔹 3. Full Test Suite
-
-```bash
-python run_tests.py
-```
-
-Executes all tests and saves:
-- 📊 Plots to `test_plots/`
-- 📝 JSON reports to `test_results/`
-
----
-
-## ⚙️ Prerequisites
-
-### Required Files:
-- `data/exec_times.csv`
-- Trained models in `models/`
-
-### Required Scripts:
-- `data_preprocessing.py`
-- `compiler_environment.py`
-- `dqn_agent.py`
-- `trainer.py`
-
-### Dependencies:
-
-```bash
-pip install pandas numpy matplotlib seaborn torch
-```
-
-Optional (PyTorch):
-
-```bash
-# For GPU
-pip install torch torchvision torchaudio
-
-# For CPU only
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+pip install -r ../requirements.txt
 ```
 
 ---
 
-## 🧪 Run Custom Tests
+## Results Summary
 
-```python
-from test_system import CompilerOptimizationTester
-
-tester = CompilerOptimizationTester("data/exec_times.csv")
-tester.setup()
-results = tester.test_agent_vs_dataset("2mm", n_tests=50)
-print(f"Win rate: {results['summary']['success_rate']:.2%}")
-```
+- **Expanded Features DQN is the best model:**
+  - 100% success rate, highest improvements, and best generalization (see `alt_rl_model/trainres.txt` for details).
+- **LOOCV** demonstrates strong generalization to unseen benchmarks.
 
 ---
 
-## 🛠️ Troubleshooting
-
-- ❗ **No trained models?**
-  - Run: `python trainer.py`
-
-- 📂 **Missing dataset?**
-  - Ensure `data/exec_times.csv` exists or update the path in code
-
-- 🐍 **Import errors?**
-  - Install dependencies with `pip install -r requirements.txt` or manually
-
----
-
-✅ **Recommended Start:**
-
-```bash
-python quick_test_examples.py
-```
-
-This verifies your setup and shows meaningful test output!
-```
-
-
-
-
-
-
-## 🤝 Contributing
-
-We welcome contributions of all kinds:
-
-- 📈 Improve model architecture
-- 🚀 Add support for PPO, A2C or other RL agents
-- 🧪 Write unit tests or refactor training loop
-- 📖 Improve documentation or Jupyter notebooks for explainability
-
-### To contribute:
-
-1. Fork this repo
-2. Create a new branch: `git checkout -b feature/your-feature`
-3. Commit changes: `git commit -am 'Add your message'`
-4. Push to your fork: `git push origin feature/your-feature`
-5. Open a Pull Request ❤️
-
----
-
-## 📬 Contact
-
-For questions or collaborations:
-
-- GitHub: [@MidhunNirmal](https://github.com/MidhunNirmal)
-- Issues: Feel free to open one!
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License. See `LICENSE` file for details.
-
----
-
-Made with ❤️ for compiler autotuning and AI research.
-
+## Citation
+If you use this code or results, please cite the project or contact the authors for more information. 

@@ -1,0 +1,390 @@
+
+============================================================
+Testing configurations on benchmark: linear-algebra/kernels/2mm
+============================================================
+
+Summary for linear-algebra/kernels/2mm:
+  Total configurations tested: 8
+  Configurations improved: 5
+  Improvement rate: 0.6250
+  Mean improvement: 1.86%
+  Mean positive improvement: 4.79%
+  Maximum improvement: 6.98%
+  Minimum improvement: -4.84%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/kernels/3mm
+============================================================
+
+Summary for linear-algebra/kernels/3mm:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 2.84%
+  Mean positive improvement: 2.84%
+  Maximum improvement: 4.92%
+  Minimum improvement: 0.37%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/kernels/atax
+============================================================
+
+Summary for linear-algebra/kernels/atax:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 4.77%
+  Mean positive improvement: 4.77%
+  Maximum improvement: 11.17%
+  Minimum improvement: 0.62%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/kernels/bicg
+============================================================
+
+Summary for linear-algebra/kernels/bicg:
+  Total configurations tested: 8
+  Configurations improved: 7
+  Improvement rate: 0.8750
+  Mean improvement: 7.07%
+  Mean positive improvement: 8.08%
+  Maximum improvement: 9.89%
+  Minimum improvement: -0.03%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/kernels/doitgen
+============================================================
+
+Summary for linear-algebra/kernels/doitgen:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 10.84%
+  Mean positive improvement: 10.84%
+  Maximum improvement: 16.75%
+  Minimum improvement: 3.87%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/kernels/mvt
+============================================================
+
+Summary for linear-algebra/kernels/mvt:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 11.80%
+  Mean positive improvement: 11.80%
+  Maximum improvement: 33.29%
+  Minimum improvement: 4.17%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/solvers/cholesky
+============================================================
+
+Summary for linear-algebra/solvers/cholesky:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 3.77%
+  Mean positive improvement: 3.77%
+  Maximum improvement: 6.11%
+  Minimum improvement: 0.23%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/solvers/durbin
+============================================================
+
+Summary for linear-algebra/solvers/durbin:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 30.59%
+  Mean positive improvement: 30.59%
+  Maximum improvement: 42.87%
+  Minimum improvement: 15.48%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/solvers/gramschmidt
+============================================================
+
+Summary for linear-algebra/solvers/gramschmidt:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 1.07%
+  Mean positive improvement: 1.07%
+  Maximum improvement: 1.89%
+  Minimum improvement: 0.33%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/solvers/lu
+============================================================
+
+Summary for linear-algebra/solvers/lu:
+  Total configurations tested: 8
+  Configurations improved: 5
+  Improvement rate: 0.6250
+  Mean improvement: 11.08%
+  Mean positive improvement: 18.24%
+  Maximum improvement: 44.87%
+  Minimum improvement: -1.58%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/solvers/ludcmp
+============================================================
+
+Summary for linear-algebra/solvers/ludcmp:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 11.52%
+  Mean positive improvement: 11.52%
+  Maximum improvement: 41.79%
+  Minimum improvement: 0.25%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/solvers/trisolv
+============================================================
+
+Summary for linear-algebra/solvers/trisolv:
+  Total configurations tested: 8
+  Configurations improved: 7
+  Improvement rate: 0.8750
+  Mean improvement: 4.23%
+  Mean positive improvement: 4.92%
+  Maximum improvement: 6.86%
+  Minimum improvement: -0.61%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/gemm
+============================================================
+
+Summary for linear-algebra/blas/gemm:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 33.05%
+  Mean positive improvement: 33.05%
+  Maximum improvement: 58.53%
+  Minimum improvement: 1.45%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/gemver
+============================================================
+
+Summary for linear-algebra/blas/gemver:
+  Total configurations tested: 8
+  Configurations improved: 6
+  Improvement rate: 0.7500
+  Mean improvement: 8.46%
+  Mean positive improvement: 11.59%
+  Maximum improvement: 30.44%
+  Minimum improvement: -1.33%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/gesummv
+============================================================
+
+Summary for linear-algebra/blas/gesummv:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 1.33%
+  Mean positive improvement: 1.33%
+  Maximum improvement: 2.01%
+  Minimum improvement: 0.11%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/symm
+============================================================
+
+Summary for linear-algebra/blas/symm:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 16.24%
+  Mean positive improvement: 16.24%
+  Maximum improvement: 31.77%
+  Minimum improvement: 10.47%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/syr2k
+============================================================
+
+Summary for linear-algebra/blas/syr2k:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 5.28%
+  Mean positive improvement: 5.28%
+  Maximum improvement: 30.41%
+  Minimum improvement: 0.52%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/syrk
+============================================================
+
+Summary for linear-algebra/blas/syrk:
+  Total configurations tested: 8
+  Configurations improved: 7
+  Improvement rate: 0.8750
+  Mean improvement: 27.57%
+  Mean positive improvement: 31.52%
+  Maximum improvement: 38.15%
+  Minimum improvement: -0.09%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/trmm
+============================================================
+
+Summary for linear-algebra/blas/trmm:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 0.79%
+  Mean positive improvement: 0.79%
+  Maximum improvement: 2.08%
+  Minimum improvement: 0.05%
+
+============================================================
+Testing configurations on benchmark: datamining/correlation
+============================================================
+
+Summary for datamining/correlation:
+  Total configurations tested: 8
+  Configurations improved: 6
+  Improvement rate: 0.7500
+  Mean improvement: 0.91%
+  Mean positive improvement: 1.43%
+  Maximum improvement: 3.44%
+  Minimum improvement: -1.12%
+
+============================================================
+Testing configurations on benchmark: datamining/covariance
+============================================================
+
+Summary for datamining/covariance:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 1.89%
+  Mean positive improvement: 1.89%
+  Maximum improvement: 3.01%
+  Minimum improvement: 0.35%
+
+============================================================
+Testing configurations on benchmark: medley/deriche
+============================================================
+
+Summary for medley/deriche:
+  Total configurations tested: 8
+  Configurations improved: 7
+  Improvement rate: 0.8750
+  Mean improvement: 6.84%
+  Mean positive improvement: 7.87%
+  Maximum improvement: 29.46%
+  Minimum improvement: -0.34%
+
+============================================================
+Testing configurations on benchmark: medley/floyd-warshall
+============================================================
+
+Summary for medley/floyd-warshall:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 8.14%
+  Mean positive improvement: 8.14%
+  Maximum improvement: 17.73%
+  Minimum improvement: 3.03%
+
+============================================================
+Testing configurations on benchmark: medley/nussinov
+============================================================
+
+Summary for medley/nussinov:
+  Total configurations tested: 8
+  Configurations improved: 7
+  Improvement rate: 0.8750
+  Mean improvement: 2.27%
+  Mean positive improvement: 2.59%
+  Maximum improvement: 4.15%
+  Minimum improvement: 0.00%
+
+============================================================
+Testing configurations on benchmark: stencils/adi
+============================================================
+
+Summary for stencils/adi:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 6.14%
+  Mean positive improvement: 6.14%
+  Maximum improvement: 10.84%
+  Minimum improvement: 0.75%
+
+============================================================
+Testing configurations on benchmark: stencils/fdtd-2d
+============================================================
+
+Summary for stencils/fdtd-2d:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 3.24%
+  Mean positive improvement: 3.24%
+  Maximum improvement: 5.58%
+  Minimum improvement: 0.66%
+
+============================================================
+Testing configurations on benchmark: stencils/heat-3d
+============================================================
+
+Summary for stencils/heat-3d:
+  Total configurations tested: 8
+  Configurations improved: 7
+  Improvement rate: 0.8750
+  Mean improvement: 18.13%
+  Mean positive improvement: 20.74%
+  Maximum improvement: 31.66%
+  Minimum improvement: -0.14%
+
+============================================================
+Testing configurations on benchmark: stencils/jacobi-1d
+============================================================
+
+Summary for stencils/jacobi-1d:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 20.99%
+  Mean positive improvement: 20.99%
+  Maximum improvement: 29.33%
+  Minimum improvement: 3.03%
+
+============================================================
+Testing configurations on benchmark: stencils/jacobi-2d
+============================================================
+
+Summary for stencils/jacobi-2d:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 7.38%
+  Mean positive improvement: 7.38%
+  Maximum improvement: 16.46%
+  Minimum improvement: 0.81%
+
+============================================================
+Testing configurations on benchmark: stencils/seidel-2d
+============================================================
+
+Summary for stencils/seidel-2d:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 61.10%
+  Mean positive improvement: 61.10%
+  Maximum improvement: 93.73%
+  Minimum improvement: 35.07%

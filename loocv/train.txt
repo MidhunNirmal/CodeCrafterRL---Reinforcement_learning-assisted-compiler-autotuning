@@ -1,0 +1,26 @@
+Episode 200/5000 | Benchmark: consumer_tiff2rgba | Reward: 104.9895 | Avg Reward: 31.4095 | Avg Best Improvement: 0.1707 | Successful: 23/23
+Episode 400/5000 | Benchmark: security_rijndael_e | Reward: 47.6754 | Avg Reward: 59.1635 | Avg Best Improvement: 0.1789 | Successful: 23/23
+Episode 600/5000 | Benchmark: automotive_qsort1 | Reward: 78.8212 | Avg Reward: 68.9164 | Avg Best Improvement: 0.1815 | Successful: 23/23
+Episode 800/5000 | Benchmark: consumer_tiffmedian | Reward: 30.4520 | Avg Reward: 68.8079 | Avg Best Improvement: 0.1815 | Successful: 23/23
+Episode 1000/5000 | Benchmark: telecom_adpcm_d | Reward: 74.8297 | Avg Reward: 70.3993 | Avg Best Improvement: 0.1815 | Successful: 23/23
+Episode 1200/5000 | Benchmark: automotive_susan_e | Reward: 100.9174 | Avg Reward: 70.8233 | Avg Best Improvement: 0.1819 | Successful: 23/23
+Episode 1400/5000 | Benchmark: network_patricia | Reward: 215.3973 | Avg Reward: 73.1493 | Avg Best Improvement: 0.1819 | Successful: 23/23
+Episode 1600/5000 | Benchmark: consumer_jpeg_c | Reward: 26.6367 | Avg Reward: 72.9391 | Avg Best Improvement: 0.1828 | Successful: 23/23
+Episode 1800/5000 | Benchmark: security_blowfish_d | Reward: 73.7453 | Avg Reward: 74.5300 | Avg Best Improvement: 0.1828 | Successful: 23/23
+Episode 2000/5000 | Benchmark: bzip2d | Reward: 26.9027 | Avg Reward: 74.3989 | Avg Best Improvement: 0.1828 | Successful: 23/23
+Episode 2200/5000 | Benchmark: consumer_tiff2bw | Reward: 82.9095 | Avg Reward: 74.7799 | Avg Best Improvement: 0.1828 | Successful: 23/23
+Episode 2400/5000 | Benchmark: security_rijndael_d | Reward: 30.6931 | Avg Reward: 76.2072 | Avg Best Improvement: 0.1828 | Successful: 23/23
+Episode 2600/5000 | Benchmark: automotive_bitcount | Reward: 27.5044 | Avg Reward: 75.7691 | Avg Best Improvement: 0.1828 | Successful: 23/23
+Episode 2800/5000 | Benchmark: consumer_tiffdither | Reward: 49.7676 | Avg Reward: 76.4088 | Avg Best Improvement: 0.1828 | Successful: 23/23
+Episode 3000/5000 | Benchmark: telecom_adpcm_c | Reward: 133.0551 | Avg Reward: 77.9054 | Avg Best Improvement: 0.1840 | Successful: 23/23
+Episode 3200/5000 | Benchmark: automotive_susan_c | Reward: 101.6329 | Avg Reward: 77.3762 | Avg Best Improvement: 0.1859 | Successful: 23/23
+Episode 3400/5000 | Benchmark: network_dijkstra | Reward: 131.3840 | Avg Reward: 77.3825 | Avg Best Improvement: 0.1859 | Successful: 23/23
+Episode 3600/5000 | Benchmark: telecom_CRC32 | Reward: 29.7221 | Avg Reward: 78.1112 | Avg Best Improvement: 0.1859 | Successful: 23/23
+Episode 3800/5000 | Benchmark: automotive_susan_s | Reward: 157.1573 | Avg Reward: 77.9337 | Avg Best Improvement: 0.1867 | Successful: 23/23
+Episode 4000/5000 | Benchmark: office_stringsearch1 | Reward: 91.4712 | Avg Reward: 77.9634 | Avg Best Improvement: 0.1867 | Successful: 23/23
+Episode 4200/5000 | Benchmark: consumer_jpeg_d | Reward: 33.3488 | Avg Reward: 77.3878 | Avg Best Improvement: 0.1890 | Successful: 23/23
+Episode 4400/5000 | Benchmark: security_blowfish_e | Reward: 60.6552 | Avg Reward: 79.1740 | Avg Best Improvement: 0.1890 | Successful: 23/23
+Episode 4600/5000 | Benchmark: bzip2e | Reward: 41.2443 | Avg Reward: 78.7548 | Avg Best Improvement: 0.1890 | Successful: 23/23
+Episode 4800/5000 | Benchmark: consumer_tiff2rgba | Reward: 120.5950 | Avg Reward: 79.2521 | Avg Best Improvement: 0.1890 | Successful: 23/23
+Episode 5000/5000 | Benchmark: security_rijndael_e | Reward: 100.3141 | Avg Reward: 80.2067 | Avg Best Improvement: 0.1890 | Successful: 23/23
+LOOCV expanded features model saved to: /mnt/c/Users/sis/Desktop/mini1 - Copy/loocv/loocv_expanded_features_dqn_agent.pth

@@ -1,0 +1,2400 @@
+
+============================================================
+Testing configurations on benchmark: linear-algebra/kernels/2mm
+============================================================
+
+Results for linear-algebra/kernels/2mm:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 1, 0, 1, 1]
+  Input improvement:       1.47%
+  Suggested improvement:   2.56%
+  Model improvement:      +1.09%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [1, 0, 0, 1, 0, 0, 0]
+  Input improvement:       2.03%
+  Suggested improvement:   3.45%
+  Model improvement:      +1.41%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [1, 0, 0, 1, 0, 0, 0]
+  Input improvement:      -2.69%
+  Suggested improvement:   3.45%
+  Model improvement:      +6.14%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [1, 0, 0, 1, 1, 0, 0]
+  Input improvement:      -1.95%
+  Suggested improvement:   3.32%
+  Model improvement:      +5.27%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [1, 0, 0, 1, 0, 0, 0]
+  Input improvement:      -2.23%
+  Suggested improvement:   3.45%
+  Model improvement:      +5.67%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 1, 1]
+  Input improvement:       1.12%
+  Suggested improvement:   1.02%
+  Model improvement:      -0.09%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 0, 0, 1, 0, 1, 0]
+  Input improvement:      -1.76%
+  Suggested improvement:   1.02%
+  Model improvement:      +2.78%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [1, 0, 0, 1, 0, 0, 0]
+  Input improvement:       0.82%
+  Suggested improvement:   3.45%
+  Model improvement:      +2.63%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/kernels/2mm:
+  Total configurations tested: 8
+  Configurations improved: 7
+  Improvement rate: 0.8750
+  Mean improvement: 3.11%
+  Mean positive improvement: 3.57%
+  Maximum improvement: 6.14%
+  Minimum improvement: -0.09%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/kernels/3mm
+============================================================
+
+Results for linear-algebra/kernels/3mm:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 1, 1]
+  Input improvement:      -0.58%
+  Suggested improvement:   3.07%
+  Model improvement:      +3.65%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 1, 0]
+  Input improvement:       0.90%
+  Suggested improvement:   3.39%
+  Model improvement:      +2.49%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 0, 1, 1, 1, 1, 1]
+  Input improvement:      -1.69%
+  Suggested improvement:   3.07%
+  Model improvement:      +4.76%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 1, 1]
+  Input improvement:      -1.28%
+  Suggested improvement:   3.07%
+  Model improvement:      +4.35%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 1, 1, 1, 1, 1, 1]
+  Input improvement:       2.87%
+  Suggested improvement:   3.23%
+  Model improvement:      +0.37%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 1, 1]
+  Input improvement:       1.28%
+  Suggested improvement:   3.07%
+  Model improvement:      +1.79%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 1, 0]
+  Input improvement:       1.80%
+  Suggested improvement:   3.39%
+  Model improvement:      +1.59%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 1, 1]
+  Input improvement:      -0.31%
+  Suggested improvement:   3.07%
+  Model improvement:      +3.38%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/kernels/3mm:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 2.80%
+  Mean positive improvement: 2.80%
+  Maximum improvement: 4.76%
+  Minimum improvement: 0.37%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/kernels/atax
+============================================================
+
+Results for linear-algebra/kernels/atax:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 0, 0]
+  Input improvement:       0.39%
+  Suggested improvement:   5.50%
+  Model improvement:      +5.11%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 0]
+  Input improvement:       1.09%
+  Suggested improvement:   5.50%
+  Model improvement:      +4.41%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 0]
+  Input improvement:      -5.67%
+  Suggested improvement:   5.50%
+  Model improvement:     +11.17%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 0]
+  Input improvement:       1.27%
+  Suggested improvement:   5.50%
+  Model improvement:      +4.23%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 0]
+  Input improvement:       3.97%
+  Suggested improvement:   5.50%
+  Model improvement:      +1.53%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 0]
+  Input improvement:       0.11%
+  Suggested improvement:   5.50%
+  Model improvement:      +5.39%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 0, 0]
+  Input improvement:      -0.19%
+  Suggested improvement:   5.50%
+  Model improvement:      +5.69%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 0, 0]
+  Input improvement:       4.88%
+  Suggested improvement:   5.50%
+  Model improvement:      +0.62%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/kernels/atax:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 4.77%
+  Mean positive improvement: 4.77%
+  Maximum improvement: 11.17%
+  Minimum improvement: 0.62%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/kernels/bicg
+============================================================
+
+Results for linear-algebra/kernels/bicg:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 0, 1, 1, 1, 1, 0]
+  Input improvement:      -1.96%
+  Suggested improvement:   7.19%
+  Model improvement:      +9.15%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 1, 1, 1, 0, 1, 0]
+  Input improvement:      -2.69%
+  Suggested improvement:   6.94%
+  Model improvement:      +9.63%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [1, 0, 1, 1, 1, 1, 1]
+  Input improvement:      -1.05%
+  Suggested improvement:   7.08%
+  Model improvement:      +8.13%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [1, 1, 1, 1, 0, 1, 1]
+  Input improvement:      -2.45%
+  Suggested improvement:   7.09%
+  Model improvement:      +9.54%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [1, 1, 1, 1, 0, 1, 1]
+  Input improvement:       7.11%
+  Suggested improvement:   7.09%
+  Model improvement:      -0.03%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 1, 1, 1, 0, 1, 0]
+  Input improvement:      -2.48%
+  Suggested improvement:   6.94%
+  Model improvement:      +9.42%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 1, 1, 1, 1, 1]
+  Input improvement:      -2.44%
+  Suggested improvement:   7.11%
+  Model improvement:      +9.55%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 1, 1, 1, 0, 1, 0]
+  Input improvement:       5.94%
+  Suggested improvement:   6.94%
+  Model improvement:      +1.00%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/kernels/bicg:
+  Total configurations tested: 8
+  Configurations improved: 7
+  Improvement rate: 0.8750
+  Mean improvement: 7.05%
+  Mean positive improvement: 8.06%
+  Maximum improvement: 9.63%
+  Minimum improvement: -0.03%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/kernels/doitgen
+============================================================
+
+Results for linear-algebra/kernels/doitgen:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:      -2.07%
+  Suggested improvement:   8.20%
+  Model improvement:     +10.27%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:       0.74%
+  Suggested improvement:   8.20%
+  Model improvement:      +7.46%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:      -5.64%
+  Suggested improvement:   8.20%
+  Model improvement:     +13.84%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:       4.33%
+  Suggested improvement:   8.20%
+  Model improvement:      +3.87%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:      -3.06%
+  Suggested improvement:   8.20%
+  Model improvement:     +11.26%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:      -8.55%
+  Suggested improvement:   8.20%
+  Model improvement:     +16.75%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:      -0.21%
+  Suggested improvement:   8.20%
+  Model improvement:      +8.41%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:      -6.67%
+  Suggested improvement:   8.20%
+  Model improvement:     +14.87%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/kernels/doitgen:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 10.84%
+  Mean positive improvement: 10.84%
+  Maximum improvement: 16.75%
+  Minimum improvement: 3.87%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/kernels/mvt
+============================================================
+
+Results for linear-algebra/kernels/mvt:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:      14.04%
+  Suggested improvement:  18.38%
+  Model improvement:      +4.34%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:      13.88%
+  Suggested improvement:  18.38%
+  Model improvement:      +4.51%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:     -14.91%
+  Suggested improvement:  18.38%
+  Model improvement:     +33.29%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:      13.72%
+  Suggested improvement:  18.38%
+  Model improvement:      +4.66%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:     -14.56%
+  Suggested improvement:  18.38%
+  Model improvement:     +32.94%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:      12.35%
+  Suggested improvement:  18.38%
+  Model improvement:      +6.03%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:      13.93%
+  Suggested improvement:  18.38%
+  Model improvement:      +4.45%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:      14.21%
+  Suggested improvement:  18.38%
+  Model improvement:      +4.17%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/kernels/mvt:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 11.80%
+  Mean positive improvement: 11.80%
+  Maximum improvement: 33.29%
+  Minimum improvement: 4.17%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/solvers/cholesky
+============================================================
+
+Results for linear-algebra/solvers/cholesky:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 0, 1, 1, 1, 1, 0]
+  Input improvement:      -1.80%
+  Suggested improvement:   3.56%
+  Model improvement:      +5.37%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [1, 0, 1, 1, 1, 1, 0]
+  Input improvement:      -1.90%
+  Suggested improvement:   3.56%
+  Model improvement:      +5.47%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [1, 0, 1, 1, 1, 1, 0]
+  Input improvement:       0.62%
+  Suggested improvement:   3.56%
+  Model improvement:      +2.95%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [1, 0, 1, 1, 1, 1, 0]
+  Input improvement:      -1.82%
+  Suggested improvement:   3.56%
+  Model improvement:      +5.39%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [1, 0, 1, 1, 1, 1, 0]
+  Input improvement:       3.34%
+  Suggested improvement:   3.56%
+  Model improvement:      +0.23%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [1, 0, 1, 1, 1, 1, 0]
+  Input improvement:      -2.54%
+  Suggested improvement:   3.56%
+  Model improvement:      +6.11%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 0, 1, 1, 1, 1, 0]
+  Input improvement:       0.57%
+  Suggested improvement:   3.56%
+  Model improvement:      +2.99%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [1, 0, 1, 1, 1, 1, 0]
+  Input improvement:       1.89%
+  Suggested improvement:   3.56%
+  Model improvement:      +1.68%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/solvers/cholesky:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 3.77%
+  Mean positive improvement: 3.77%
+  Maximum improvement: 6.11%
+  Minimum improvement: 0.23%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/solvers/durbin
+============================================================
+
+Results for linear-algebra/solvers/durbin:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 1, 1, 0, 1]
+  Input improvement:      -1.61%
+  Suggested improvement:  32.85%
+  Model improvement:     +34.46%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 1, 1, 1, 1, 0, 1]
+  Input improvement:      -0.20%
+  Suggested improvement:  32.85%
+  Model improvement:     +33.06%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 1, 1, 1, 1, 0, 1]
+  Input improvement:     -11.35%
+  Suggested improvement:  32.85%
+  Model improvement:     +44.20%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 1, 1, 1, 1, 0, 1]
+  Input improvement:      -1.06%
+  Suggested improvement:  32.85%
+  Model improvement:     +33.92%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 1, 1, 1, 1, 0, 1]
+  Input improvement:      14.46%
+  Suggested improvement:  32.85%
+  Model improvement:     +18.39%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 0, 0, 1, 0, 1, 1]
+  Input improvement:      -0.82%
+  Suggested improvement:  24.34%
+  Model improvement:     +25.17%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 0, 1, 1, 0, 1]
+  Input improvement:      -0.55%
+  Suggested improvement:  32.57%
+  Model improvement:     +33.12%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 1, 1, 1, 1, 0, 1]
+  Input improvement:      16.05%
+  Suggested improvement:  32.85%
+  Model improvement:     +16.81%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/solvers/durbin:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 29.89%
+  Mean positive improvement: 29.89%
+  Maximum improvement: 44.20%
+  Minimum improvement: 16.81%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/solvers/gramschmidt
+============================================================
+
+Results for linear-algebra/solvers/gramschmidt:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 0, 1, 0, 0, 1]
+  Input improvement:      -0.12%
+  Suggested improvement:   1.03%
+  Model improvement:      +1.15%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [1, 1, 0, 1, 0, 0, 1]
+  Input improvement:       0.69%
+  Suggested improvement:   1.03%
+  Model improvement:      +0.33%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [1, 1, 0, 1, 0, 0, 1]
+  Input improvement:      -0.28%
+  Suggested improvement:   1.03%
+  Model improvement:      +1.30%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [1, 1, 0, 1, 0, 0, 1]
+  Input improvement:      -0.06%
+  Suggested improvement:   1.03%
+  Model improvement:      +1.08%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [1, 1, 0, 1, 0, 0, 1]
+  Input improvement:      -0.87%
+  Suggested improvement:   1.03%
+  Model improvement:      +1.89%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [1, 1, 0, 1, 0, 0, 1]
+  Input improvement:       0.25%
+  Suggested improvement:   1.03%
+  Model improvement:      +0.78%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 0, 1, 0, 0, 1]
+  Input improvement:      -0.26%
+  Suggested improvement:   1.03%
+  Model improvement:      +1.29%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [1, 1, 0, 1, 0, 0, 1]
+  Input improvement:       0.27%
+  Suggested improvement:   1.03%
+  Model improvement:      +0.76%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/solvers/gramschmidt:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 1.07%
+  Mean positive improvement: 1.07%
+  Maximum improvement: 1.89%
+  Minimum improvement: 0.33%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/solvers/lu
+============================================================
+
+Results for linear-algebra/solvers/lu:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 0, 1, 0, 0, 0]
+  Input improvement:      22.07%
+  Suggested improvement:  22.71%
+  Model improvement:      +0.64%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 0, 0, 0, 0, 0, 0]
+  Input improvement:      21.44%
+  Suggested improvement:  22.07%
+  Model improvement:      +0.64%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [1, 1, 0, 1, 0, 0, 0]
+  Input improvement:     -21.36%
+  Suggested improvement:  22.71%
+  Model improvement:     +44.07%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 1, 0, 1, 0, 0, 0]
+  Input improvement:      22.37%
+  Suggested improvement:  21.20%
+  Model improvement:      -1.18%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [1, 1, 0, 1, 0, 0, 0]
+  Input improvement:     -22.16%
+  Suggested improvement:  22.71%
+  Model improvement:     +44.87%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [1, 1, 0, 1, 0, 0, 0]
+  Input improvement:      20.87%
+  Suggested improvement:  22.71%
+  Model improvement:      +1.84%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 0, 1, 0, 0, 0]
+  Input improvement:      22.62%
+  Suggested improvement:  22.71%
+  Model improvement:      +0.09%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [1, 1, 0, 1, 0, 0, 0]
+  Input improvement:      23.39%
+  Suggested improvement:  22.71%
+  Model improvement:      -0.68%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/solvers/lu:
+  Total configurations tested: 8
+  Configurations improved: 6
+  Improvement rate: 0.7500
+  Mean improvement: 11.29%
+  Mean positive improvement: 15.36%
+  Maximum improvement: 44.87%
+  Minimum improvement: -1.18%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/solvers/ludcmp
+============================================================
+
+Results for linear-algebra/solvers/ludcmp:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 0, 0, 0, 0, 1]
+  Input improvement:      20.40%
+  Suggested improvement:  22.07%
+  Model improvement:      +1.68%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [1, 1, 0, 0, 0, 0, 1]
+  Input improvement:      19.10%
+  Suggested improvement:  22.07%
+  Model improvement:      +2.97%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [1, 1, 0, 0, 0, 0, 1]
+  Input improvement:     -19.72%
+  Suggested improvement:  22.07%
+  Model improvement:     +41.79%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [1, 1, 0, 0, 0, 0, 1]
+  Input improvement:      19.79%
+  Suggested improvement:  22.07%
+  Model improvement:      +2.28%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [1, 1, 0, 0, 0, 0, 0]
+  Input improvement:     -18.13%
+  Suggested improvement:  22.20%
+  Model improvement:     +40.33%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [1, 1, 0, 0, 0, 0, 1]
+  Input improvement:      20.06%
+  Suggested improvement:  22.07%
+  Model improvement:      +2.01%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 0, 0, 0, 0, 1]
+  Input improvement:      21.83%
+  Suggested improvement:  22.07%
+  Model improvement:      +0.25%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [1, 1, 0, 0, 0, 0, 1]
+  Input improvement:      21.09%
+  Suggested improvement:  22.07%
+  Model improvement:      +0.99%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/solvers/ludcmp:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 11.54%
+  Mean positive improvement: 11.54%
+  Maximum improvement: 41.79%
+  Minimum improvement: 0.25%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/solvers/trisolv
+============================================================
+
+Results for linear-algebra/solvers/trisolv:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 1, 0]
+  Input improvement:      -2.76%
+  Suggested improvement:   3.86%
+  Model improvement:      +6.62%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 1, 0]
+  Input improvement:      -1.69%
+  Suggested improvement:   3.86%
+  Model improvement:      +5.55%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 0, 1, 1, 1, 1, 0]
+  Input improvement:      -0.01%
+  Suggested improvement:   3.86%
+  Model improvement:      +3.87%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 1, 0]
+  Input improvement:      -1.36%
+  Suggested improvement:   3.86%
+  Model improvement:      +5.22%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [1, 0, 1, 1, 0, 1, 0]
+  Input improvement:       3.97%
+  Suggested improvement:   3.36%
+  Model improvement:      -0.61%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 1, 0]
+  Input improvement:      -3.00%
+  Suggested improvement:   3.86%
+  Model improvement:      +6.86%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 0, 1, 0]
+  Input improvement:      -0.23%
+  Suggested improvement:   2.28%
+  Model improvement:      +2.50%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 1, 0]
+  Input improvement:       1.10%
+  Suggested improvement:   3.86%
+  Model improvement:      +2.76%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/solvers/trisolv:
+  Total configurations tested: 8
+  Configurations improved: 7
+  Improvement rate: 0.8750
+  Mean improvement: 4.10%
+  Mean positive improvement: 4.77%
+  Maximum improvement: 6.86%
+  Minimum improvement: -0.61%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/gemm
+============================================================
+
+Results for linear-algebra/blas/gemm:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 0, 1, 1, 0, 1]
+  Input improvement:      -4.63%
+  Suggested improvement:  30.16%
+  Model improvement:     +34.79%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [1, 1, 0, 1, 1, 0, 1]
+  Input improvement:      -4.58%
+  Suggested improvement:  30.10%
+  Model improvement:     +34.68%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [1, 1, 0, 1, 1, 0, 1]
+  Input improvement:     -28.43%
+  Suggested improvement:  30.10%
+  Model improvement:     +58.53%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [1, 1, 0, 1, 1, 0, 1]
+  Input improvement:      -4.62%
+  Suggested improvement:  30.10%
+  Model improvement:     +34.72%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [1, 1, 0, 1, 1, 0, 1]
+  Input improvement:      28.65%
+  Suggested improvement:  30.10%
+  Model improvement:      +1.45%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [1, 1, 0, 1, 1, 0, 1]
+  Input improvement:      -4.60%
+  Suggested improvement:  30.10%
+  Model improvement:     +34.70%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 0, 1, 1, 0, 1]
+  Input improvement:      -4.57%
+  Suggested improvement:  30.10%
+  Model improvement:     +34.67%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [1, 1, 0, 1, 1, 0, 1]
+  Input improvement:      -0.24%
+  Suggested improvement:  30.10%
+  Model improvement:     +30.34%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/blas/gemm:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 32.98%
+  Mean positive improvement: 32.98%
+  Maximum improvement: 58.53%
+  Minimum improvement: 1.45%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/gemver
+============================================================
+
+Results for linear-algebra/blas/gemver:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 0, 1, 0, 1]
+  Input improvement:      14.52%
+  Suggested improvement:  13.05%
+  Model improvement:      -1.47%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 1]
+  Input improvement:      13.66%
+  Suggested improvement:  16.80%
+  Model improvement:      +3.13%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 1]
+  Input improvement:     -13.94%
+  Suggested improvement:  16.80%
+  Model improvement:     +30.74%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 1]
+  Input improvement:      14.68%
+  Suggested improvement:  16.80%
+  Model improvement:      +2.12%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 1]
+  Input improvement:     -11.77%
+  Suggested improvement:  16.80%
+  Model improvement:     +28.57%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 1]
+  Input improvement:      13.79%
+  Suggested improvement:  16.80%
+  Model improvement:      +3.01%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 0, 1, 0, 1]
+  Input improvement:      13.62%
+  Suggested improvement:  13.05%
+  Model improvement:      -0.57%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 0, 1]
+  Input improvement:      14.38%
+  Suggested improvement:  16.80%
+  Model improvement:      +2.42%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/blas/gemver:
+  Total configurations tested: 8
+  Configurations improved: 6
+  Improvement rate: 0.7500
+  Mean improvement: 8.49%
+  Mean positive improvement: 11.67%
+  Maximum improvement: 30.74%
+  Minimum improvement: -1.47%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/gesummv
+============================================================
+
+Results for linear-algebra/blas/gesummv:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 1, 1, 1, 1]
+  Input improvement:      -0.27%
+  Suggested improvement:   1.61%
+  Model improvement:      +1.89%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 1, 1, 1, 1, 1, 1]
+  Input improvement:       0.46%
+  Suggested improvement:   1.61%
+  Model improvement:      +1.15%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 1, 1, 1, 1, 1, 1]
+  Input improvement:      -0.33%
+  Suggested improvement:   1.61%
+  Model improvement:      +1.95%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 1, 1, 1, 1, 1, 1]
+  Input improvement:       0.10%
+  Suggested improvement:   1.61%
+  Model improvement:      +1.51%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 1, 1, 1, 1, 1, 1]
+  Input improvement:       1.50%
+  Suggested improvement:   1.61%
+  Model improvement:      +0.11%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 1, 1, 1, 1, 1, 1]
+  Input improvement:      -0.40%
+  Suggested improvement:   1.61%
+  Model improvement:      +2.01%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 1, 1, 1, 1]
+  Input improvement:       0.15%
+  Suggested improvement:   1.61%
+  Model improvement:      +1.46%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 1, 1, 1, 1, 1, 1]
+  Input improvement:       1.07%
+  Suggested improvement:   1.61%
+  Model improvement:      +0.54%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/blas/gesummv:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 1.33%
+  Mean positive improvement: 1.33%
+  Maximum improvement: 2.01%
+  Minimum improvement: 0.11%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/symm
+============================================================
+
+Results for linear-algebra/blas/symm:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 0, 1, 0, 0, 1]
+  Input improvement:      10.89%
+  Suggested improvement:  21.37%
+  Model improvement:     +10.47%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 0, 0, 1, 0, 0, 1]
+  Input improvement:      10.38%
+  Suggested improvement:  21.36%
+  Model improvement:     +10.99%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 1, 0, 1, 1, 0, 1]
+  Input improvement:     -10.23%
+  Suggested improvement:  21.54%
+  Model improvement:     +31.77%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 1, 0, 1, 0, 0, 1]
+  Input improvement:       9.49%
+  Suggested improvement:  21.37%
+  Model improvement:     +11.88%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 1, 0, 1, 0, 0, 1]
+  Input improvement:     -10.23%
+  Suggested improvement:  21.37%
+  Model improvement:     +31.60%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 0, 0, 1, 0, 0, 1]
+  Input improvement:      10.20%
+  Suggested improvement:  21.36%
+  Model improvement:     +11.16%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 0, 1, 0, 0, 1]
+  Input improvement:      10.49%
+  Suggested improvement:  21.37%
+  Model improvement:     +10.87%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 0, 0, 1, 0, 0, 1]
+  Input improvement:      10.40%
+  Suggested improvement:  21.36%
+  Model improvement:     +10.96%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/blas/symm:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 16.21%
+  Mean positive improvement: 16.21%
+  Maximum improvement: 31.77%
+  Minimum improvement: 10.47%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/syr2k
+============================================================
+
+Results for linear-algebra/blas/syr2k:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 1, 1, 1, 0]
+  Input improvement:       3.34%
+  Suggested improvement:   4.57%
+  Model improvement:      +1.23%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 1, 1, 1, 0, 1, 0]
+  Input improvement:       2.83%
+  Suggested improvement:   5.11%
+  Model improvement:      +2.29%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 0, 1, 1, 1, 1, 0]
+  Input improvement:       3.80%
+  Suggested improvement:   4.89%
+  Model improvement:      +1.09%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 1, 1, 1, 0, 1, 0]
+  Input improvement:       3.43%
+  Suggested improvement:   5.11%
+  Model improvement:      +1.69%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 0, 1, 1, 1, 1, 0]
+  Input improvement:     -25.52%
+  Suggested improvement:   4.89%
+  Model improvement:     +30.41%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 1, 0]
+  Input improvement:       3.18%
+  Suggested improvement:   4.89%
+  Model improvement:      +1.72%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 1, 0, 1, 0]
+  Input improvement:       1.75%
+  Suggested improvement:   5.11%
+  Model improvement:      +3.36%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 1, 1, 1, 0, 1, 0]
+  Input improvement:       4.05%
+  Suggested improvement:   5.11%
+  Model improvement:      +1.06%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/blas/syr2k:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 5.36%
+  Mean positive improvement: 5.36%
+  Maximum improvement: 30.41%
+  Minimum improvement: 1.06%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/syrk
+============================================================
+
+Results for linear-algebra/blas/syrk:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 1, 0]
+  Input improvement:     -18.95%
+  Suggested improvement:  17.54%
+  Model improvement:     +36.49%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 0, 1, 0, 1, 1, 0]
+  Input improvement:     -20.41%
+  Suggested improvement:  15.33%
+  Model improvement:     +35.74%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 0, 0, 0, 1, 1, 1]
+  Input improvement:      15.54%
+  Suggested improvement:  15.45%
+  Model improvement:      -0.09%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 0, 1, 1, 0]
+  Input improvement:     -17.77%
+  Suggested improvement:  15.33%
+  Model improvement:     +33.10%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 0, 1, 0, 1, 1, 0]
+  Input improvement:     -20.61%
+  Suggested improvement:  15.33%
+  Model improvement:     +35.93%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 0, 1, 1, 0]
+  Input improvement:     -17.35%
+  Suggested improvement:  15.33%
+  Model improvement:     +32.68%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 1, 0]
+  Input improvement:     -19.85%
+  Suggested improvement:  17.54%
+  Model improvement:     +37.39%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 0, 0, 0, 1, 1, 1]
+  Input improvement:      17.27%
+  Suggested improvement:  15.45%
+  Model improvement:      -1.82%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/blas/syrk:
+  Total configurations tested: 8
+  Configurations improved: 6
+  Improvement rate: 0.7500
+  Mean improvement: 26.18%
+  Mean positive improvement: 35.22%
+  Maximum improvement: 37.39%
+  Minimum improvement: -1.82%
+
+============================================================
+Testing configurations on benchmark: linear-algebra/blas/trmm
+============================================================
+
+Results for linear-algebra/blas/trmm:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 1, 1, 0, 0, 0]
+  Input improvement:       0.82%
+  Suggested improvement:   0.64%
+  Model improvement:      -0.18%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:       0.86%
+  Suggested improvement:   0.94%
+  Model improvement:      +0.08%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:       0.71%
+  Suggested improvement:   0.94%
+  Model improvement:      +0.23%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:       0.89%
+  Suggested improvement:   0.94%
+  Model improvement:      +0.05%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:      -1.14%
+  Suggested improvement:   0.94%
+  Model improvement:      +2.08%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:      -2.68%
+  Suggested improvement:   0.94%
+  Model improvement:      +3.63%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:       0.70%
+  Suggested improvement:   0.94%
+  Model improvement:      +0.24%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 1, 1, 0, 0, 0, 0]
+  Input improvement:      -0.80%
+  Suggested improvement:   0.94%
+  Model improvement:      +1.74%
+  ✓ Model suggested different configuration
+
+Summary for linear-algebra/blas/trmm:
+  Total configurations tested: 8
+  Configurations improved: 7
+  Improvement rate: 0.8750
+  Mean improvement: 0.99%
+  Mean positive improvement: 1.15%
+  Maximum improvement: 3.63%
+  Minimum improvement: -0.18%
+
+============================================================
+Testing configurations on benchmark: datamining/correlation
+============================================================
+
+Results for datamining/correlation:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 0, 0, 1, 0, 0]
+  Input improvement:       0.60%
+  Suggested improvement:   0.42%
+  Model improvement:      -0.18%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 0, 0, 0, 1, 0, 0]
+  Input improvement:       0.63%
+  Suggested improvement:   0.42%
+  Model improvement:      -0.21%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 1, 0, 0, 1, 0, 0]
+  Input improvement:      -0.83%
+  Suggested improvement:   1.50%
+  Model improvement:      +2.34%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 0, 0, 0, 1, 0, 1]
+  Input improvement:       1.54%
+  Suggested improvement:   1.54%
+  Model improvement:      +0.00%
+  - Model kept same configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 1, 0, 0, 1, 0, 0]
+  Input improvement:      -1.94%
+  Suggested improvement:   1.50%
+  Model improvement:      +3.44%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 1, 0, 0, 1, 0, 0]
+  Input improvement:       1.30%
+  Suggested improvement:   1.50%
+  Model improvement:      +0.21%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 0, 0, 1, 0, 0]
+  Input improvement:       0.86%
+  Suggested improvement:   0.42%
+  Model improvement:      -0.44%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 1, 0, 0, 1, 0, 0]
+  Input improvement:       0.46%
+  Suggested improvement:   1.50%
+  Model improvement:      +1.05%
+  ✓ Model suggested different configuration
+
+Summary for datamining/correlation:
+  Total configurations tested: 8
+  Configurations improved: 4
+  Improvement rate: 0.5000
+  Mean improvement: 0.77%
+  Mean positive improvement: 1.76%
+  Maximum improvement: 3.44%
+  Minimum improvement: -0.44%
+
+============================================================
+Testing configurations on benchmark: datamining/covariance
+============================================================
+
+Results for datamining/covariance:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:      -1.01%
+  Suggested improvement:   1.84%
+  Model improvement:      +2.86%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:      -0.31%
+  Suggested improvement:   1.84%
+  Model improvement:      +2.15%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:      -0.22%
+  Suggested improvement:   1.84%
+  Model improvement:      +2.06%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:       0.25%
+  Suggested improvement:   1.84%
+  Model improvement:      +1.59%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [1, 1, 0, 1, 0, 0, 1]
+  Input improvement:      -1.17%
+  Suggested improvement:   1.84%
+  Model improvement:      +3.01%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:       1.49%
+  Suggested improvement:   1.84%
+  Model improvement:      +0.35%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:      -0.75%
+  Suggested improvement:   1.84%
+  Model improvement:      +2.59%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [1, 1, 1, 1, 0, 0, 1]
+  Input improvement:       1.31%
+  Suggested improvement:   1.84%
+  Model improvement:      +0.53%
+  ✓ Model suggested different configuration
+
+Summary for datamining/covariance:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 1.89%
+  Mean positive improvement: 1.89%
+  Maximum improvement: 3.01%
+  Minimum improvement: 0.35%
+
+============================================================
+Testing configurations on benchmark: medley/deriche
+============================================================
+
+Results for medley/deriche:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 0, 0, 1, 0, 0]
+  Input improvement:      13.12%
+  Suggested improvement:  13.89%
+  Model improvement:      +0.77%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [1, 1, 0, 0, 1, 0, 0]
+  Input improvement:      13.19%
+  Suggested improvement:  13.89%
+  Model improvement:      +0.71%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [1, 1, 0, 0, 1, 0, 0]
+  Input improvement:     -15.57%
+  Suggested improvement:  13.89%
+  Model improvement:     +29.46%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [1, 1, 0, 0, 1, 0, 0]
+  Input improvement:      12.88%
+  Suggested improvement:  13.89%
+  Model improvement:      +1.02%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [1, 1, 0, 1, 1, 0, 0]
+  Input improvement:      -9.52%
+  Suggested improvement:  13.50%
+  Model improvement:     +23.02%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [1, 1, 0, 0, 1, 0, 0]
+  Input improvement:      13.84%
+  Suggested improvement:  13.89%
+  Model improvement:      +0.05%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 0, 1, 1, 0, 0]
+  Input improvement:      13.62%
+  Suggested improvement:  13.50%
+  Model improvement:      -0.12%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [1, 1, 0, 1, 1, 0, 0]
+  Input improvement:      13.26%
+  Suggested improvement:  13.50%
+  Model improvement:      +0.24%
+  ✓ Model suggested different configuration
+
+Summary for medley/deriche:
+  Total configurations tested: 8
+  Configurations improved: 7
+  Improvement rate: 0.8750
+  Mean improvement: 6.89%
+  Mean positive improvement: 7.90%
+  Maximum improvement: 29.46%
+  Minimum improvement: -0.12%
+
+============================================================
+Testing configurations on benchmark: medley/floyd-warshall
+============================================================
+
+Results for medley/floyd-warshall:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 0, 1, 1, 0, 0, 1]
+  Input improvement:       5.42%
+  Suggested improvement:   9.05%
+  Model improvement:      +3.63%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [1, 0, 1, 1, 0, 0, 0]
+  Input improvement:       5.41%
+  Suggested improvement:  12.83%
+  Model improvement:      +7.41%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [1, 0, 1, 1, 0, 0, 0]
+  Input improvement:      -8.68%
+  Suggested improvement:  12.83%
+  Model improvement:     +21.50%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [1, 0, 1, 1, 0, 0, 1]
+  Input improvement:       5.54%
+  Suggested improvement:   9.05%
+  Model improvement:      +3.51%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [1, 0, 1, 1, 0, 0, 0]
+  Input improvement:       3.41%
+  Suggested improvement:  12.83%
+  Model improvement:      +9.41%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [1, 0, 1, 1, 0, 0, 1]
+  Input improvement:       3.24%
+  Suggested improvement:   9.05%
+  Model improvement:      +5.81%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 0, 1, 1, 0, 0, 1]
+  Input improvement:       5.84%
+  Suggested improvement:   9.05%
+  Model improvement:      +3.22%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [1, 0, 1, 1, 0, 0, 0]
+  Input improvement:       9.79%
+  Suggested improvement:  12.83%
+  Model improvement:      +3.03%
+  ✓ Model suggested different configuration
+
+Summary for medley/floyd-warshall:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 7.19%
+  Mean positive improvement: 7.19%
+  Maximum improvement: 21.50%
+  Minimum improvement: 3.03%
+
+============================================================
+Testing configurations on benchmark: medley/nussinov
+============================================================
+
+Results for medley/nussinov:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 1, 1, 0, 0]
+  Input improvement:       1.00%
+  Suggested improvement:   3.07%
+  Model improvement:      +2.07%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 1, 1, 1, 1, 0, 0]
+  Input improvement:       0.91%
+  Suggested improvement:   3.07%
+  Model improvement:      +2.16%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 1, 1, 1, 1, 0, 0]
+  Input improvement:       0.69%
+  Suggested improvement:   3.07%
+  Model improvement:      +2.38%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 1, 1, 1, 1, 0, 0]
+  Input improvement:      -0.15%
+  Suggested improvement:   3.07%
+  Model improvement:      +3.23%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 1, 1, 1, 1, 0, 0]
+  Input improvement:      -1.07%
+  Suggested improvement:   3.07%
+  Model improvement:      +4.15%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 1, 1, 1, 1, 0, 0]
+  Input improvement:       1.19%
+  Suggested improvement:   3.07%
+  Model improvement:      +1.88%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 1, 1, 0, 0]
+  Input improvement:       0.80%
+  Suggested improvement:   3.07%
+  Model improvement:      +2.27%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 1, 1, 1, 1, 0, 0]
+  Input improvement:       3.07%
+  Suggested improvement:   3.07%
+  Model improvement:      +0.00%
+  - Model kept same configuration
+
+Summary for medley/nussinov:
+  Total configurations tested: 8
+  Configurations improved: 7
+  Improvement rate: 0.8750
+  Mean improvement: 2.27%
+  Mean positive improvement: 2.59%
+  Maximum improvement: 4.15%
+  Minimum improvement: 0.00%
+
+============================================================
+Testing configurations on benchmark: stencils/adi
+============================================================
+
+Results for stencils/adi:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 0, 1, 1, 1, 0]
+  Input improvement:      -1.91%
+  Suggested improvement:   4.73%
+  Model improvement:      +6.65%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [1, 1, 0, 1, 1, 1, 0]
+  Input improvement:      -5.10%
+  Suggested improvement:   4.73%
+  Model improvement:      +9.84%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [1, 1, 0, 1, 1, 1, 0]
+  Input improvement:       1.11%
+  Suggested improvement:   4.73%
+  Model improvement:      +3.62%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [1, 1, 1, 1, 1, 1, 0]
+  Input improvement:      -3.20%
+  Suggested improvement:   4.51%
+  Model improvement:      +7.72%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [1, 1, 0, 1, 1, 1, 0]
+  Input improvement:       3.99%
+  Suggested improvement:   4.73%
+  Model improvement:      +0.75%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [1, 0, 1, 0, 1, 1, 0]
+  Input improvement:      -1.03%
+  Suggested improvement:   4.00%
+  Model improvement:      +5.03%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 1, 0, 1, 1, 1, 0]
+  Input improvement:      -0.15%
+  Suggested improvement:   4.73%
+  Model improvement:      +4.88%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [1, 1, 0, 1, 1, 1, 0]
+  Input improvement:      -6.11%
+  Suggested improvement:   4.73%
+  Model improvement:     +10.84%
+  ✓ Model suggested different configuration
+
+Summary for stencils/adi:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 6.17%
+  Mean positive improvement: 6.17%
+  Maximum improvement: 10.84%
+  Minimum improvement: 0.75%
+
+============================================================
+Testing configurations on benchmark: stencils/fdtd-2d
+============================================================
+
+Results for stencils/fdtd-2d:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 1, 1, 1, 0]
+  Input improvement:       1.57%
+  Suggested improvement:   4.30%
+  Model improvement:      +2.73%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 1, 1, 1, 1, 1, 0]
+  Input improvement:       1.52%
+  Suggested improvement:   4.30%
+  Model improvement:      +2.78%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 1, 1, 1, 1, 1, 0]
+  Input improvement:      -1.28%
+  Suggested improvement:   4.30%
+  Model improvement:      +5.58%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 1, 1, 1, 1, 1, 0]
+  Input improvement:       1.80%
+  Suggested improvement:   4.30%
+  Model improvement:      +2.50%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 1, 1, 1, 1, 1, 0]
+  Input improvement:       3.64%
+  Suggested improvement:   4.30%
+  Model improvement:      +0.66%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 1, 1, 1, 1, 1, 0]
+  Input improvement:       0.55%
+  Suggested improvement:   4.30%
+  Model improvement:      +3.75%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 1, 1, 1, 1, 1, 0]
+  Input improvement:       0.14%
+  Suggested improvement:   4.30%
+  Model improvement:      +4.16%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 1, 1, 1, 1, 1, 0]
+  Input improvement:       0.50%
+  Suggested improvement:   4.30%
+  Model improvement:      +3.80%
+  ✓ Model suggested different configuration
+
+Summary for stencils/fdtd-2d:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 3.24%
+  Mean positive improvement: 3.24%
+  Maximum improvement: 5.58%
+  Minimum improvement: 0.66%
+
+============================================================
+Testing configurations on benchmark: stencils/heat-3d
+============================================================
+
+Results for stencils/heat-3d:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:      -3.47%
+  Suggested improvement:  17.61%
+  Model improvement:     +21.09%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:      -3.31%
+  Suggested improvement:  17.61%
+  Model improvement:     +20.93%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:     -14.05%
+  Suggested improvement:  17.61%
+  Model improvement:     +31.66%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:      -0.60%
+  Suggested improvement:  17.61%
+  Model improvement:     +18.21%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:      13.42%
+  Suggested improvement:  17.61%
+  Model improvement:      +4.19%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:      -5.76%
+  Suggested improvement:  17.61%
+  Model improvement:     +23.37%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:      -8.09%
+  Suggested improvement:  17.61%
+  Model improvement:     +25.70%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:      17.76%
+  Suggested improvement:  17.61%
+  Model improvement:      -0.14%
+  ✓ Model suggested different configuration
+
+Summary for stencils/heat-3d:
+  Total configurations tested: 8
+  Configurations improved: 7
+  Improvement rate: 0.8750
+  Mean improvement: 18.13%
+  Mean positive improvement: 20.74%
+  Maximum improvement: 31.66%
+  Minimum improvement: -0.14%
+
+============================================================
+Testing configurations on benchmark: stencils/jacobi-1d
+============================================================
+
+Results for stencils/jacobi-1d:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 0, 1]
+  Input improvement:      -5.28%
+  Suggested improvement:  20.45%
+  Model improvement:     +25.73%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 1]
+  Input improvement:      -5.57%
+  Suggested improvement:  20.45%
+  Model improvement:     +26.02%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 1]
+  Input improvement:      -8.88%
+  Suggested improvement:  20.45%
+  Model improvement:     +29.33%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 1]
+  Input improvement:      -6.49%
+  Suggested improvement:  20.45%
+  Model improvement:     +26.93%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 0, 1, 1, 1, 0, 1]
+  Input improvement:      17.42%
+  Suggested improvement:  20.45%
+  Model improvement:      +3.03%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [1, 0, 1, 1, 1, 0, 1]
+  Input improvement:      -5.59%
+  Suggested improvement:  20.65%
+  Model improvement:     +26.24%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 0, 1]
+  Input improvement:      -5.79%
+  Suggested improvement:  20.45%
+  Model improvement:     +26.24%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 0, 1, 1, 1, 0, 1]
+  Input improvement:      15.84%
+  Suggested improvement:  20.45%
+  Model improvement:      +4.61%
+  ✓ Model suggested different configuration
+
+Summary for stencils/jacobi-1d:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 21.02%
+  Mean positive improvement: 21.02%
+  Maximum improvement: 29.33%
+  Minimum improvement: 3.03%
+
+============================================================
+Testing configurations on benchmark: stencils/jacobi-2d
+============================================================
+
+Results for stencils/jacobi-2d:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 0, 0, 0]
+  Input improvement:       8.72%
+  Suggested improvement:   9.99%
+  Model improvement:      +1.26%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [1, 0, 1, 1, 0, 0, 0]
+  Input improvement:       9.33%
+  Suggested improvement:  10.14%
+  Model improvement:      +0.81%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [1, 0, 1, 1, 0, 0, 0]
+  Input improvement:      -6.47%
+  Suggested improvement:  10.14%
+  Model improvement:     +16.61%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 0, 0, 0]
+  Input improvement:       4.92%
+  Suggested improvement:   9.99%
+  Model improvement:      +5.07%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 0, 1, 1, 0, 0, 0]
+  Input improvement:       1.20%
+  Suggested improvement:   9.99%
+  Model improvement:      +8.79%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 0, 0, 0]
+  Input improvement:      -3.34%
+  Suggested improvement:   9.99%
+  Model improvement:     +13.33%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [1, 0, 1, 1, 0, 0, 0]
+  Input improvement:       7.71%
+  Suggested improvement:  10.14%
+  Model improvement:      +2.43%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 0, 1, 1, 0, 0, 0]
+  Input improvement:      -0.74%
+  Suggested improvement:   9.99%
+  Model improvement:     +10.73%
+  ✓ Model suggested different configuration
+
+Summary for stencils/jacobi-2d:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 7.38%
+  Mean positive improvement: 7.38%
+  Maximum improvement: 16.61%
+  Minimum improvement: 0.81%
+
+============================================================
+Testing configurations on benchmark: stencils/seidel-2d
+============================================================
+
+Results for stencils/seidel-2d:
+--------------------------------------------------
+
+No opts:
+  Input config:     [0, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:      19.00%
+  Suggested improvement:  56.11%
+  Model improvement:     +37.11%
+  ✓ Model suggested different configuration
+
+Only O2:
+  Input config:     [0, 0, 0, 0, 0, 0, 1]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:      19.05%
+  Suggested improvement:  56.11%
+  Model improvement:     +37.06%
+  ✓ Model suggested different configuration
+
+Aggressive:
+  Input config:     [1, 0, 0, 0, 0, 1, 1]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:     -37.62%
+  Suggested improvement:  56.11%
+  Model improvement:     +93.73%
+  ✓ Model suggested different configuration
+
+Conservative:
+  Input config:     [0, 0, 0, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:      19.06%
+  Suggested improvement:  56.11%
+  Model improvement:     +37.05%
+  ✓ Model suggested different configuration
+
+All flags:
+  Input config:     [1, 1, 1, 1, 1, 1, 1]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:     -11.68%
+  Suggested improvement:  56.11%
+  Model improvement:     +67.80%
+  ✓ Model suggested different configuration
+
+Mixed:
+  Input config:     [1, 0, 1, 0, 1, 0, 1]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:     -34.46%
+  Suggested improvement:  56.11%
+  Model improvement:     +90.57%
+  ✓ Model suggested different configuration
+
+Unsafe math:
+  Input config:     [1, 0, 0, 0, 0, 0, 0]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:     -34.30%
+  Suggested improvement:  56.11%
+  Model improvement:     +90.41%
+  ✓ Model suggested different configuration
+
+Disable opts:
+  Input config:     [0, 1, 1, 1, 1, 0, 0]
+  Suggested config: [0, 0, 1, 1, 0, 0, 1]
+  Input improvement:      21.04%
+  Suggested improvement:  56.11%
+  Model improvement:     +35.07%
+  ✓ Model suggested different configuration
+
+Summary for stencils/seidel-2d:
+  Total configurations tested: 8
+  Configurations improved: 8
+  Improvement rate: 1.0000
+  Mean improvement: 61.10%
+  Mean positive improvement: 61.10%
+  Maximum improvement: 93.73%
+  Minimum improvement: 35.07%
