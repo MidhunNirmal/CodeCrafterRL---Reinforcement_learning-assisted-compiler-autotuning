@@ -1,3 +1,17 @@
+# CodeCrafterRL: Reinforcement Learning-Assisted Compiler Autotuning
+
+Welcome to **CodeCrafterRL**, an open-source research project designed to explore **Reinforcement Learning (RL)** for **automatic compiler flag tuning** across benchmarks in the [PolyBench suite](https://github.com/stefanocereda/polybench_data). This project leverages Deep Q-Networks (DQN) to learn optimal compiler configurations that minimize execution time for a given benchmark.
+
+---
+
+## 🚀 Features
+
+- 🧠 **Reinforcement Learning environment** using OpenAI Gym API
+- ⚙️ RL agent (DQN) trained to select compiler flags
+- 📊 Execution time prediction using Nearest Neighbors and heuristic fallback
+- 📈 Reward curves plotted and saved for performance analysis
+
+
 # Alternate RL Model & LOOCV (Leave-One-Out Cross Validation)
 
 This directory contains advanced reinforcement learning (RL) models for compiler optimization, with a focus on the expanded features DQN agent, which has demonstrated state-of-the-art performance.
